@@ -49,3 +49,19 @@ print(newlist)
 newlist.insert(1, "WEEEE")
 
 print(newlist)
+
+newlist.pop(0)
+
+print(newlist)
+
+
+del newlist[0 : 1]
+
+print(newlist)
+
+newlist.extend(["wee", 2])
+
+print(newlist) 
+
+print(type(newlist[0]))
+
