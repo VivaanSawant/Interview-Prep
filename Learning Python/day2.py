@@ -102,3 +102,10 @@ elif (True):
 else:
     print("dafqu is dis cod")
     
+i = 1
+
+while (i <= 5):
+    print("frick dis languag")
+    i += 1
+
+for 
