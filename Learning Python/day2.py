@@ -1,3 +1,4 @@
+
 dawg = [1, 2, "acc"]
 print(dawg[2])
 
@@ -68,7 +69,36 @@ print(int(0x8))
 print(bin(0x8))
 print(oct(0x8))
 
-#operators
+from math import sqrt, pow
+print(pow(3, 2))
+#whats up aliens my name is anvin reddy lets cnotnnue this seriesi in pITON
+import math
 
+x = math.sqrt(9)
+print(x)
+x = math.sqrt(7)
+print(x)
+print(math.floor(x))
+print(math.ceil(x))
+print(math.pow(3, 2))
+print(math.pi)
 
+print(int(math.pow(3, 2)))
 
+import math as austin
+
+print(austin.pow(3, 2))
+print(austin.sqrt(2232))
+
+first = 5
+second = 6
+first, second = second, first
+print(first)
+
+if (False):
+    print("hi")
+elif (True):
+    print("bye")
+else:
+    print("dafqu is dis cod")
+    
