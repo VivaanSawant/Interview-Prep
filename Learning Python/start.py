@@ -65,3 +65,4 @@ print(newlist)
 
 print(type(newlist[0]))
 
+# left off when episode 5 was finished
