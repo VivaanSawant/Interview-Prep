@@ -25,3 +25,37 @@ S = {12, 14, 25, 12}
 print(S) 
 #can't index in a set
 
+name = "Vivaan"
+
+print(id(name))
+
+#converitng types
+
+a = 5.6;
+print(int(a))
+b = 5;
+
+print(float(b))
+
+print(b < a)
+print(b < int(a))
+
+print(int(True))
+print(int(False))
+print(float(True))
+print(float(False))
+
+
+print(list(range(10)))
+print(list(range(1, 10, 2)))
+
+# dictionaries
+
+d = {'vivaan' : "super cool", 'anika': "gaeee"}
+
+print(d)
+
+print(d["vivaan"])
+print(d.values())
+
+print(len(d))
