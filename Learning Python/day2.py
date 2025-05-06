@@ -59,3 +59,16 @@ print(d["vivaan"])
 print(d.values())
 
 print(len(d))
+
+print(not (True and False))
+
+print(8 << 2)
+print(8 >> 2)
+print(int(0x8))
+print(bin(0x8))
+print(oct(0x8))
+
+#operators
+
+
+
