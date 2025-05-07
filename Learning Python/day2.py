@@ -189,3 +189,17 @@ nums = [12, 123, 123123, 123, 31, 32, 33, 45]
 
 for nums in nums:
     if(nums % 2 == 0): print(nums);
+    
+
+
+
+empt = [None] * 5
+print(empt)
+
+#good reference for technical interviews
+
+
+import array as arr
+
+array1 = arr.array('i', [1, 2, 3, 4])
+print(array1[1])
