@@ -111,3 +111,35 @@ if(__name__ == "__main__"):
 
 #OBJECT ORIENTED RAHHHHHH
 
+class Computer:
+    # include attributes and behavior
+    def config(self):
+        print("adlkfj")
+        
+comp = Computer()
+comp.config()
+Computer.config(comp)
+
+#more objecg shi
+
+# redo
+
+class Human:
+    def __init__(self, name, gender):
+        self.name = name;
+        self.gender = gender;
+        
+    def config(self):
+        print("quicckagaigga")
+        
+    def printStuff(self):
+        print(self.name + ", " + self.gender)
+        
+h = Human("Vivaan", "Male")
+h2 = Human("Aishah", "Female")
+h.printStuff()
+h2.printStuff()
+h.name = "Varun"
+h.printStuff()
+h2.printStuff()
+
