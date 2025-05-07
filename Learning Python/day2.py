@@ -203,3 +203,21 @@ import array as arr
 
 array1 = arr.array('i', [1, 2, 3, 4])
 print(array1[1])
+array1.reverse()
+print(array1[1])
+
+
+test = [1, 2, 3]
+print(test[0])
+test.reverse()
+print(test[0])
+
+testString = "vivaan"
+temp = [None] * len(testString)
+
+for i in range(0, len(testString)):
+    temp[i] = testString[i]
+
+temp.reverse();
+result = "".join(temp)
+print(result)
