@@ -38,3 +38,26 @@ print(factorial(4))
 
 
 # the global keyword makes a variable global
+
+
+a = 5;
+print("asdhfakl", a, "adfas")
+
+l = [1, 2, 3, 4, 5, 6]
+
+def count(l):
+    c = 0
+    o = 0
+    for i in l:
+        if(i % 2 == 0): c += 1;
+        else: o += 1;
+    return c, o
+
+
+even, odd = count(l)
+
+print(even)
+print(odd)
+
+
+
