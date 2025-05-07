@@ -108,4 +108,84 @@ while (i <= 5):
     print("frick dis languag")
     i += 1
 
-for 
+x = ["vivaan", 12, 23, "dfalkdsj"]
+
+for i in x:
+    print(i)
+
+y = "vivaan"
+
+for i in y:
+    print(i)
+    
+for i in range(2):
+    print(y[i])
+    
+for i in range(11, 21):
+    print(i)
+    
+for i in range(11, 21, 2):
+    print(i)
+    
+for i in range(20, 0, -1):
+    if(i % 5 != 0):
+        print(i)
+    
+for i in range(20, 0, -5):
+    print(i)
+    
+    
+candies = 5;
+
+i = 1;
+while(i <= candies):
+    print("candy")
+    i += 1
+
+#use break to break oops
+
+for i in range(1, 101):
+    if(i % 3 == 0 or i % 5 == 0):
+        continue
+    
+    print(i)
+
+rev = "vivaan";
+print(rev[-1:-len(rev) - 1:-1])
+
+print(rev[0])
+
+
+
+print(rev)
+
+print("#", end = "\n\n")
+#this makes it so that a new thing inst redone
+
+
+for i in range(1, 5):
+    for j in range(1, 5):
+        print("a ", end = "")
+    print("\n")
+
+
+x = 5
+
+for i in range(0, x):
+    for j in range(0, x - i):
+        print("a ", end = "")
+    print("\n")
+        
+
+def isPrime(x):
+    for i in range(2, x):
+        if(x % i == 0): return False;
+    return True;
+
+print(isPrime(7))
+print(isPrime(8))
+
+nums = [12, 123, 123123, 123, 31, 32, 33, 45]
+
+for nums in nums:
+    if(nums % 2 == 0): print(nums);
