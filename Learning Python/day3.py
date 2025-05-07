@@ -71,3 +71,27 @@ print(result)
 f2 = lambda a, b: a + b
 print(f2(4, 5))
 
+def hash(x):
+    return 2 * x
+
+def getIndex(hash, x, capacity):
+    return hash(x) % capacity
+
+print(getIndex(hash, 5, 3))
+
+l = [1, 2, 3, 4, 5, 6]
+
+def isEven(x):
+    if(x % 2 == 0): return True;
+    
+
+
+def filter(filterFunc, lis):
+    for i in lis:
+        if(not filterFunc(i)): lis.remove(i);
+    return lis
+
+l = filter(isEven, l)
+print(l)
+
+
