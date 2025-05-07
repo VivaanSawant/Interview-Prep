@@ -95,3 +95,19 @@ l = filter(isEven, l)
 print(l)
 
 
+
+ # special variables __asldfjasdlf__
+ 
+ 
+
+print(__name__) #first moduel name is always main cuz thatst he point of execution
+
+print("hello " + __name__)
+
+if(__name__ == "__main__"):
+    print("smth")
+    
+# allows for modularity
+
+#OBJECT ORIENTED RAHHHHHH
+
