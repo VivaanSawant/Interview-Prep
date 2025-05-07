@@ -61,3 +61,13 @@ print(odd)
 
 
 
+#paiTHOOOn
+
+f = lambda a : a * a
+result = f(5)
+
+print(result)
+
+f2 = lambda a, b: a + b
+print(f2(4, 5))
+
