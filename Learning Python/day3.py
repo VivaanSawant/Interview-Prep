@@ -134,6 +134,9 @@ class Human:
         
     def printStuff(self):
         print(self.name + ", " + self.gender)
+    
+    def compare(self, other):
+        return len(self.name) > len(other.name)
         
 h = Human("Vivaan", "Male")
 h2 = Human("Aishah", "Female")
@@ -142,4 +145,22 @@ h2.printStuff()
 h.name = "Varun"
 h.printStuff()
 h2.printStuff()
+
+print(h.compare(h2))
+
+
+# instance vs class variables
+
+
+class Car:
+    # defining a variable here beocme sa class variable
+    wheels = 4 #belongs to calss namespace
+    def __init__(self):
+        self.mil = 10 #belongs ot instance namespace
+        self.com = "BMW"
+    
+c1 = Car()
+print(c1.wheels)
+Car.wheels = 3
+print(c1.wheels)
 
