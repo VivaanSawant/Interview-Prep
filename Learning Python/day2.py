@@ -221,3 +221,42 @@ for i in range(0, len(testString)):
 temp.reverse();
 result = "".join(temp)
 print(result)
+
+newArr = arr.array('u', (i for i in temp))
+
+print(newArr)
+
+t = [1, 2, 3, 4, 5]
+for i in range(0, len(t)):
+    t[i] = t[i] + 5
+    
+print(t)
+
+a = t
+
+a[0] = 1222
+
+print(t)
+print(a)
+
+dimen = [[None] * 5] * 5
+print(dimen)
+
+for i in range(0, len(dimen)): 
+    for j in range(0, len(dimen)):
+        dimen[i][j] = i * j
+        
+print(dimen)     
+
+oneD = [None for _ in range(3)]
+print(oneD)  
+
+twoD = [[None for _ in range(3)]
+        for _ in range(3)]
+
+print(twoD)
+
+#matrix implementations
+
+listA = [1, 2, 3, 4]
+print(max(listA))
