@@ -91,3 +91,4 @@ c1.feature1()
 
 # init only called if found for C, if not found, goes to B
 
+# methods when inheriting order from left to right (MRO)
