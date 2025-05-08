@@ -82,13 +82,20 @@ class C(A, B):
         print("C init")
     def feature5(self):
         print("feature 5 working")
+    def feat(self):
+        super().feature3()
 
 b1 = B()
 b1.feature3()
 
 c1 = C()
 c1.feature1()
+c1.feat()
 
 # init only called if found for C, if not found, goes to B
 
 # methods when inheriting order from left to right (MRO)
+
+class thingClass:
+    def _internalShi(self):
+        pass
