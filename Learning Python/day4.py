@@ -138,3 +138,24 @@ print(new1.__next__())
 print(new1.__next__())
 print(new1.__next__())
 print(new1.__next__())
+
+
+a = 5
+b = 4
+try:
+    print(a/b)
+except:
+    print("Division by 0 lolsies")
+    
+    
+a = 5
+b = 0
+try:
+    print("Resource Open")
+    print(a/b)
+except Exception as e:
+    print("Division by 0 lolsies", e)
+finally:
+    print("Resource Closed")
+    
+    
