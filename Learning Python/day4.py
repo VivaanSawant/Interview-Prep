@@ -99,3 +99,42 @@ c1.feat()
 class thingClass:
     def _internalShi(self):
         pass
+    #the _ make sit only applicable in that method
+
+
+nums = [1, 2, 3, 4]
+
+it = iter(nums)
+
+print(it.__next__())
+print(it.__next__())
+
+
+def topten():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    
+    
+values = topten()
+print(values.__next__())
+print(values.__next__())
+print(values.__next__())
+print(values.__next__())
+
+# generatOR
+
+def toper():
+    n = 1;
+    while(n <= 10):
+        sq = n * n
+        yield sq
+        n += 1
+
+new1 = toper()
+
+print(new1.__next__())
+print(new1.__next__())
+print(new1.__next__())
+print(new1.__next__())
