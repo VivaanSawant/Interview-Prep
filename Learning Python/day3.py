@@ -164,3 +164,33 @@ print(c1.wheels)
 Car.wheels = 3
 print(c1.wheels)
 
+
+class Student:
+    
+    school = "CMU"
+    
+    def __init__(self, m1, m2, m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+    
+    def avg(self):
+        return (self.m1 + self.m2 + self.m3) / 3
+    
+    def getM1(self):
+        return self.m1
+    
+    def setM1(self, m1):
+        self.m1 = m1
+
+
+s1 = Student(1, 2, 3)
+s2 = Student(3, 4, 5)
+
+print(s1.avg())
+print(s2.avg())
+
+print(Student.getM1(s1))
+s1.setM1(2)
+print(Student.getM1(s1))
+
