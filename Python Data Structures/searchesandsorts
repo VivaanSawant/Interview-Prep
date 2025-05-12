@@ -15,6 +15,6 @@ newList = [1, 2, 3, 4, 5, 6, 7]
 
 print(binsearch(newList, 3, 0, len(newList)))
 print(binsearch(newList, 25, 0, len(newList)))
-
+ 
     
     
