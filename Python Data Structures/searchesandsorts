@@ -10,7 +10,7 @@ def binsearch(list1, value, min, max):
     else:
         return mid
 
-
+ 
 newList = [1, 2, 3, 4, 5, 6, 7]
 
 print(binsearch(newList, 3, 0, len(newList)))
