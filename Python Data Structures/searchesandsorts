@@ -1,18 +1,20 @@
 def binsearch(list1, value, min, max):
-    if(max - min <= 1):
+    if(min >= max):
         return "Not found"
     
-    mid = int(min + ((max - min) / 2))
+    mid = int(min + ((max - min) // 2))
     if(list1[mid] < value):
-        binsearch(list1, value, mid + 1, max)
+        return binsearch(list1, value, mid + 1, max)
     elif(list1[mid] > value):
-        binsearch(list1, value, min, mid)
+        return binsearch(list1, value, min, mid)
     else:
         return mid
 
 
 newList = [1, 2, 3, 4, 5, 6, 7]
 
-print(binsearch(newList, 3, 0, len(newList) - 1))
+print(binsearch(newList, 3, 0, len(newList)))
+print(binsearch(newList, 25, 0, len(newList)))
+
     
     
