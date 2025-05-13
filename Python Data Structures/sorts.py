@@ -18,13 +18,3 @@ print(toSort)
 
 
 # insertion sort
-
-def insert(l, x, y):
-    assert(y < x)
-    tmp = l[x]
-    for i in range(x, y, -1):
-        l[i] = l[i - 1]
-    l[y] = tmp
-    
-def insertionSort(l):
-    
