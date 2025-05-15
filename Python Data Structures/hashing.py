@@ -14,3 +14,10 @@ for i in city_map.values():
     result.append(i)
     
 print(result)
+
+newRes = []
+
+for i in city_map.keys():
+    newRes.append(i)
+    
+print(newRes)
