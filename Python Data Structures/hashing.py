@@ -21,3 +21,6 @@ for i in city_map.keys():
     newRes.append(i)
     
 print(newRes)
+
+# hash sets
+
