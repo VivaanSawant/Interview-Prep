@@ -43,3 +43,29 @@ print(new_set & set2)
 print(len(new_set))
 print(len(set2))
 
+
+s = set()
+print(s)
+
+s.add(1)
+s.add(2)
+s.add(3)
+
+print(s)
+
+if 1 not in s:
+    print(True)
+else:
+    print(False)
+    
+string1 = "aaaaaaaaaaabbbbbbbbbbbbbbbbbccccccccccccccccdddddddd"
+strSet = set(string1)
+print(strSet)
+
+for i in strSet:
+    print(i)
+
+newD = {"vivaan": 1, "anika": 2}
+print(newD)
+
+next
