@@ -88,3 +88,7 @@ if 1 in newD.values():
 
 for key, val in newD.items():
     print(f"{key}, {val}")
+
+
+# heaps and priority queues
+
