@@ -68,4 +68,23 @@ for i in strSet:
 newD = {"vivaan": 1, "anika": 2}
 print(newD)
 
-next
+newD["udhirna"] = 3
+print(newD)
+
+for i in newD:
+    print(i)
+
+for i in newD:
+    print(newD[i])
+
+if "vivaan" in newD:
+    print(True)
+
+if 1 in newD:
+    print(True)
+
+if 1 in newD.values():
+    print("Its here")
+
+for key, val in newD.items():
+    print(f"{key}, {val}")
