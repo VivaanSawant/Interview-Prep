@@ -24,3 +24,10 @@ print(newRes)
 
 # hash sets
 
+new_set = set()
+new_set = {1, 2, 3}
+new_set.add(4)
+new_set.remove(2)
+if 3 in new_set:
+    print("Present")
+    
