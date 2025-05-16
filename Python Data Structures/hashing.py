@@ -31,3 +31,15 @@ new_set.remove(2)
 if 3 in new_set:
     print("Present")
     
+    
+# no duplicates in this set
+
+print(new_set)
+
+set2 = {6, 7, 8}
+
+print(new_set | set2)
+print(new_set & set2)
+print(len(new_set))
+print(len(set2))
+
