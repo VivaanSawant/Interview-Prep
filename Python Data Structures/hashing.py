@@ -92,3 +92,38 @@ for key, val in newD.items():
 
 # heaps and priority queues
 
+A = [-4, 3, 1, 0, 2, 5, 10]
+
+import heapq
+heapq.heapify(A)
+print(A)
+
+# heap push
+heapq.heappush(A, 4)
+print(A)
+
+#heap pop (extracts min value)
+min = heapq.heappop(A)
+print(A)
+
+B = [-4, 3, 1, 0, 2, 5, 10]
+B.sort()
+print(B)
+
+C = [-4, 3, 1, 0, 2, 5, 10]
+Csort = sorted(C)
+print(Csort)
+
+D = [-4, 3, 1, 0, 2, 5, 10]
+
+sortedHeap = []
+
+import heapq
+heapq.heapify(D)
+
+length = len(D)
+for i in range(0, length):
+    sortedHeap.append(heapq.heappop(D))
+    
+print(sortedHeap)
+
