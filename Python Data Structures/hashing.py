@@ -127,3 +127,12 @@ for i in range(0, length):
     
 print(sortedHeap)
 
+
+ArrN = [5, 4, 3, 5, 3, 5, 5, 4]
+
+newSet = set()
+
+for i in ArrN:
+    newSet.add(i)
+
+print(newSet[0])
