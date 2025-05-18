@@ -12,18 +12,20 @@ class Solution(object):
         :type node: Node
         :rtype: Node
         """
+        if not node:
+            return None
+
         oldNew = {}
-        queue = [node]
+        stack = [node]
         oldNew[node] = Node(node.val)
         
-        while(len(queue) > 0):
-            curr = queue.pop()
-            if curr not in oldNew:
-                oldNew[curr] = Node(curr.val)
-
+        while(len(stack) > 0):
+            curr = stack.pop()
+                
             for x in curr.neighbors:
                 if x not in oldNew:
-                    queue.append(x)
+                    oldNew[x] = Node(x.val)
+                    stack.append(x)
                 if x in oldNew:
                     oldNew[curr].neighbors.append(oldNew[x])
         
