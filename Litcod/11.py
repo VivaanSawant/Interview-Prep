@@ -8,12 +8,21 @@ class Solution(object):
         def findHeight(i, j):
             return min(height[i], height[j]) * (j - i)
         
-        allHeights = []
-        for i in range(0, len(height)):
-            for j in range(i, len(height)):
-                allHeights.append(-findHeight(i, j))
-        heapq.heapify(allHeights)
-        return -heapq.heappop(allHeights)
+        i = 0
+        j = len(height) - 1
+
+        res = 0
+
+        while(i < j):
+            res = max(res, findHeight(i, j))
+            if(height[i] < height[j]):
+                i += 1
+            else:
+                j -= 1
+        return res
+        
+
+        
 
         
 
