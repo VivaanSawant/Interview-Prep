@@ -16,7 +16,7 @@ class Solution(object):
         for i in range(1, len(s) + 1):
             for j in range(i):
                 if sublist[j] and s[j:i] in wordSet:
-                    sublist[j] = True
+                    sublist[i] = True
                     break
         
         return sublist[len(s)]
