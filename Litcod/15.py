@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        solSet = set()  # Use a set to avoid duplicate triplets
+        solSet = set() 
 
         for i in range(len(nums)):
             target = -nums[i]
