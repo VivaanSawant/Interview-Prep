@@ -5,16 +5,19 @@ class Solution(object):
         :type wordDict: List[str]
         :rtype: bool
         """
-        wordSet = set(wordDict)
+        wordSet = set()
+        for x in wordDict:
+            wordSet.add(x)
         
-        j = 0
-        while j < len(s):
-            i = j + 1
-            while i <= len(s):
-                if s[j:i] in wordSet:
+        sublist = [False for _ in range(0, len(s) + 1)]
+
+        sublist[0] = True
+
+        for i in range(1, len(s) + 1):
+            for j in range(i):
+                if sublist[j] and s[j:i] in wordSet:
+                    sublist[j] = True
                     break
-                i += 1
-            if i > len(s):
-                return False
-            j = i
-        return True
+        
+        return sublist[len(s)]
+        
