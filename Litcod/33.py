@@ -18,9 +18,16 @@ class Solution(object):
             if nums[mid] == target:
                 return mid
             
+            print(lo, mid, hi)
+            
             if target < nums[lo]:
                 return binsearch(nums, mid + 1, hi)
-            else:
+            elif target > nums[hi]:
                 return binsearch(nums, lo, mid)
+            else:
+                if target < nums[mid]:
+                    return binsearch(nums, lo, mid)
+                else:
+                    return binsearch(nums, mid + 1, hi)
 
         return binsearch(nums, 0, len(nums) - 1)
