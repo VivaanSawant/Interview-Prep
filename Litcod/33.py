@@ -14,6 +14,9 @@ class Solution(object):
                 return -1
 
             mid = lo + ((hi - lo) // 2)
+
+            if nums[mid] == target:
+                return mid
             
             if target < nums[lo]:
                 return binsearch(nums, mid + 1, hi)
