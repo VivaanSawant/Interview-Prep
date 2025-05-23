@@ -11,11 +11,10 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
 
-        if (head.next == None) and n == 1:
-            return None
-        
+        dummyNode = ListNode(0)
+        dummyNode.next = head
 
-        j = head
+        j = dummyNode
         curr = j
         for i in range(0, n):
             curr = curr.next
@@ -26,5 +25,5 @@ class Solution(object):
         
         j.next = j.next.next
 
-        return head
+        return dummyNode.next
         
