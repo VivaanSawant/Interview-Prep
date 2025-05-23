@@ -8,8 +8,10 @@ class Solution(object):
         maximum = minimum = result = nums[0]
 
         for i in range(1, len(nums)):
-            maximum = max(nums[i], nums[i] * maximum, nums[i] * minimum)
-            minimum = min(nums[i], nums[i] * maximum, nums[i] * minimum)
+            tempMax = max(nums[i], nums[i] * maximum, nums[i] * minimum)
+            tempMin = min(nums[i], nums[i] * maximum, nums[i] * minimum)
+            maximum = tempMax
+            minimum = tempMin
             result = max(result, maximum) 
 
 
