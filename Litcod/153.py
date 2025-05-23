@@ -9,18 +9,14 @@ class Solution(object):
                 return nums[lo]
             if hi - lo == 1:
                 return min(nums[hi], nums[lo])
+
             mid = lo + ((hi - lo) // 2)
-            loMid = (mid - lo) // 2
-            hiMid = (hi - mid) // 2
-            print((lo, hi, loMid, mid, hiMid))
-            if nums[hiMid] < nums[mid]:
-                return binsearch(nums, mid, hi)
-            elif nums[loMid] > nums[mid]:
-                return binsearch(nums, lo, mid)
+            loMid = lo + (mid - lo) // 2
+            hiMid = mid + (hi - mid) // 2
+           
+            if nums[mid] > nums[hi]:
+                return binsearch(nums, mid + 1, hi)
             else:
                 return binsearch(nums, lo, mid)
 
-        
         return binsearch(nums, 0, len(nums) - 1)
-
-        
