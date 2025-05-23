@@ -11,7 +11,7 @@ class Solution(object):
                 return min(nums[hi], nums[lo])
             mid = lo + ((hi - lo) // 2)
             loMid = (mid - lo) // 2
-            hiMid = mid + loMid
+            hiMid = (hi - mid) // 2
             print((lo, hi, loMid, mid, hiMid))
             if nums[hiMid] < nums[mid]:
                 return binsearch(nums, mid, hi)
